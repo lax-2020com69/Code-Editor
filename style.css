@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: monospace; /* Changed to monospace */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f4f4; /* Added background color */
+  color: #333; /* Added default text color */
+}
+
+.editor-container {
+  display: flex;
+  flex: 2; /* Increased flex for more space */
+  padding: 10px;
+  gap: 10px; /* Added gap between editors */
+}
+
+.editor-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+textarea {
+  flex: 1;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Changed to vertical */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow */
+  border-radius: 5px; /* Added rounded corners */
+  overflow: auto; /* Added scrollbar when content overflows */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight on focus */
+}
+
+.output-container {
+  flex: 3; /* Increased flex for more space */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
+  flex: 1;
+  border: 1px solid #ccc;
+  background-color: white; /* Added background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow */
+  border-radius: 5px; /* Added rounded corners */
+}

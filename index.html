@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Code Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body>
+  <div class="editor-container">
+    <div class="editor-wrapper">
+      <label for="html">HTML</label>
+      <textarea id="html" placeholder="HTML code"></textarea>
+    </div>
+    <div class="editor-wrapper">
+      <label for="css">CSS</label>
+      <textarea id="css" placeholder="CSS code"></textarea>
+    </div>
+    <div class="editor-wrapper">
+      <label for="js">JavaScript</label>
+      <textarea id="js" placeholder="JavaScript code"></textarea>
+    </div>
+  </div>
+  <div class="output-container">
+    <label for="output">Output</label>
+    <iframe id="output"></iframe>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
